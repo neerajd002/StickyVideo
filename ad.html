@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script type="text/javascript">var clickTag = "https://www.mercury.co.nz/"; </script>
+  </head>
+  <body style="overflow:hidden;">
+    <div id="banner" style="width:320px;height:50px;margin:0 auto;"></div>
+    <script type="text/javascript">
+    var e={a:"assets/320x50_banner.png",b:"assets/expandedAdAsset1.png"},l=[];if(e&&"object"==typeof e)for(var n in e)l.push(e[n]);
+(function(b,f){if(b&&"string"==typeof b){var g=b;b=[];b.push(g)}if(b&&"object"==typeof b&&b.length){var d=function(){c.push(this);c.length==b.length&&f(c)},c=[];b.forEach(function(a){if(a&&"string"==typeof a&&a.length){var h=new Image;h.onload=d;h.src=a}})}})(l,function(){function b(){setTimeout(function(){a.style.webkitTransform="";a.style.transform="";p.src="assets/expandedAdVideo1.mp4"},20)}function f(q,m,r){return"<div "+(m?'id="'+m+'"':"")+' style="'+(0==r?"":"opacity:0;-webkit-transition:all ease 0.5s;transition:all ease 0.5s;")+
+'position:absolute;top:0px;left:0px;width:100%;height:inherit;"><img src="'+q+'" style="max-width:100%;max-height:100%;position:relative;vertical-align:top;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);" /></div>'}var g=document.querySelector("#banner");g.innerHTML=f(e.a,"bannerImage");var d='<div id="videoFrame" style="display:inline-block;width:75%;height:inherit;"><video id="video" muted playsinline autoplay style="width:100%;height:100%;"></div><div id="contentFrame" style="display:inline-block;width:25%;height:inherit;position:absolute;">'+
+f(e.b,"topFrameImage1")+"</div>",c=document.createElement("div");c.style.cssText="position:relative;top:0px;left:0px;width:100%;height:100%;cursor:pointer;";c.innerHTML=d;var a=document.createElement("iframe");a.width="100%";a.height=window.top.screen.width/376*158+"px";a.style.cssText="position:fixed;top:0px;left:0px;background-color:#fff;border:none;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all ease-out 0.5s;transition:all ease-out 0.5s;";window.top.document.body.appendChild(a);
+d=a.contentWindow||a.contentDocument||a.contentDocument.document;d.document.body.innerHTML="";d.document.body.appendChild(c);d.document.body.style.cssText="margin:0px;padding:0px;width:100%;height:100%;";c.addEventListener("click",function(){window.open(clickTag,"_blank")});var h=c.querySelector("#topFrameImage1"),t=g.querySelector("#bannerImage"),p=c.querySelector("#video");setTimeout(function(){h.style.opacity=1;t.style.opacity=1},500);var k=!1;window.top.document.body.addEventListener("touchmove",
+function(){k||(b(),k=!0)},!1);window.top.addEventListener("scroll",function(){k||(b(),k=!0)},!1)});
+    </script>
+  </body>
+</html>
